@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.ControladorMenu"
+            prefWidth="450" prefHeight="300"
+            style="-fx-background-color: #f5f5f5; -fx-border-color: #cccccc; -fx-border-radius: 10;">
+
+    <Label text="Menú Principal del Usuario"
+           layoutX="110" layoutY="20"
+           style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+    <Button text="Elegir Vehículo"
+            layoutX="150" layoutY="70"
+            prefWidth="150"
+            onAction="#abrirVehiculo"
+            style="-fx-background-color: #2196f3; -fx-text-fill: white; -fx-background-radius: 8;" />
+
+    <Button text="Elegir Conductor"
+            layoutX="150" layoutY="120"
+            prefWidth="150"
+            onAction="#abrirConductor"
+            style="-fx-background-color: #4caf50; -fx-text-fill: white; -fx-background-radius: 8;" />
+
+    <Button text="Elegir Destino"
+            layoutX="150" layoutY="170"
+            prefWidth="150"
+            onAction="#abrirDestino"
+            style="-fx-background-color: #ff9800; -fx-text-fill: white; -fx-background-radius: 8;" />
+
+    <Button text="Lugar de Encuentro"
+            layoutX="150" layoutY="220"
+            prefWidth="150"
+            onAction="#abrirEncuentro"
+            style="-fx-background-color: #9c27b0; -fx-text-fill: white; -fx-background-radius: 8;" />
+
+</AnchorPane>

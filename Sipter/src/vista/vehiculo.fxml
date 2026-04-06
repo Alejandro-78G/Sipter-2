@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.ControladorVehiculo"
+            prefWidth="500" prefHeight="400">
+
+    <TableView fx:id="tablaVehiculos" layoutX="25" layoutY="30" prefWidth="450" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colPlaca" text="Placa" prefWidth="100"/>
+            <TableColumn fx:id="colModelo" text="Modelo" prefWidth="150"/>
+            <TableColumn fx:id="colCapacidad" text="Capacidad" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <Button text="Cargar Vehículos" layoutX="180" layoutY="340" onAction="#cargarVehiculos"/>
+</AnchorPane>
+

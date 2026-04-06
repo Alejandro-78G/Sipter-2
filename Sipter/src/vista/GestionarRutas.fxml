@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="Controlador.ControladorGestionRutas">
+    <top>
+        <Label text="Gestión de Rutas" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-padding: 10;" />
+    </top>
+
+    <center>
+        <VBox spacing="10">
+        <padding>
+            <Insets top="15" right="15" bottom="15" left="15" />
+        </padding>
+
+        <TableView fx:id="tablaRutas" prefHeight="300">
+                <columns>
+                    <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+                    <TableColumn fx:id="colOrigen" text="Origen" prefWidth="150"/>
+                    <TableColumn fx:id="colDestino" text="Destino" prefWidth="150"/>
+                    <TableColumn fx:id="colTarifa" text="Tarifa" prefWidth="100"/>
+                    <TableColumn fx:id="colEstado" text="Estado" prefWidth="100"/>
+                </columns>
+            </TableView>
+
+            <HBox spacing="10">
+                <TextField fx:id="txtOrigen" promptText="Origen" />
+                <TextField fx:id="txtDestino" promptText="Destino" />
+                <TextField fx:id="txtTarifa" promptText="Tarifa" />
+                <ComboBox fx:id="cbEstado" promptText="Estado" />
+            </HBox>
+
+            <HBox spacing="10">
+                <Button text="Agregar" onAction="#agregarRuta" />
+                <Button text="Actualizar" onAction="#actualizarRuta" />
+                <Button text="Eliminar" onAction="#eliminarRuta" />
+                <Button text="Refrescar" onAction="#cargarRutas" />
+                <Button text="Cerrar" onAction="#cerrarVentana" />
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.ControladorRegistro"
+            prefWidth="400" prefHeight="500">
+    <children>
+        <Label text="Registro de Usuario" layoutX="140" layoutY="20" />
+
+        <TextField fx:id="txtNombre" promptText="Nombre" layoutX="100" layoutY="70" />
+        <TextField fx:id="txtApellido" promptText="Apellido" layoutX="100" layoutY="110" />
+        <TextField fx:id="txtCedula" promptText="Cédula" layoutX="100" layoutY="150" />
+        <TextField fx:id="txtTipoDocumento" promptText="Tipo Documento" layoutX="100" layoutY="190" />
+        <PasswordField fx:id="txtContrasena" promptText="Contraseña" layoutX="100" layoutY="230" />
+        <TextField fx:id="txtUsuario" promptText="Usuario" layoutX="100" layoutY="270" />
+        <TextField fx:id="txtCiudad" promptText="Ciudad" layoutX="100" layoutY="310" />
+        <TextField fx:id="txtRol" promptText="Rol" layoutX="100" layoutY="350" />
+
+        <Button text="Registrar" layoutX="160" layoutY="400" onAction="#registrarUsuario" />
+        <Label fx:id="lblMensaje" layoutX="100" layoutY="450" text="" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.ControladorConductor"
+            prefWidth="500" prefHeight="400">
+
+    <TableView fx:id="tablaConductores" layoutX="25" layoutY="30" prefWidth="450" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="200"/>
+            <TableColumn fx:id="colLicencia" text="Licencia" prefWidth="150"/>
+        </columns>
+    </TableView>
+
+    <Button text="Cargar Conductores" layoutX="180" layoutY="340" onAction="#cargarConductores"/>
+</AnchorPane>

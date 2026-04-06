@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.ControladorEliminarRutas"
+            prefWidth="500" prefHeight="400">
+
+    <TableView fx:id="tablaRutas" layoutX="20" layoutY="20" prefWidth="460" prefHeight="300">
+        <columns>
+            <TableColumn fx:id="colId" text="ID" prefWidth="50"/>
+            <TableColumn fx:id="colOrigen" text="Origen" prefWidth="120"/>
+            <TableColumn fx:id="colDestino" text="Destino" prefWidth="120"/>
+            <TableColumn fx:id="colTarifa" text="Tarifa" prefWidth="120"/>
+        </columns>
+    </TableView>
+
+    <Button text="Eliminar Seleccionada" layoutX="170" layoutY="340" onAction="#eliminarRuta"/>
+</AnchorPane>

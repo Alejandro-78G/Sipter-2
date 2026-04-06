@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.ControladorInasistencia"
+            prefWidth="400" prefHeight="250">
+    <Label text="Reportar Inasistencia" layoutX="120" layoutY="20" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+    <Label text="Motivo:" layoutX="40" layoutY="70" />
+    <TextArea fx:id="txtMotivo" layoutX="100" layoutY="70" prefWidth="250" prefHeight="80" wrapText="true"/>
+    <Button text="Reportar" layoutX="140" layoutY="180" prefWidth="120" onAction="#reportarInasistencia"/>
+</AnchorPane>

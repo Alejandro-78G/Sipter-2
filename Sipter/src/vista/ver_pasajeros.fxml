@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controlador.ControladorVerPasajeros"
+            prefWidth="500" prefHeight="300">
+    <Label text="Lista de Pasajeros" layoutX="180" layoutY="20" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
+    <TableView fx:id="tablaPasajeros" layoutX="40" layoutY="60" prefWidth="420" prefHeight="180">
+        <columns>
+            <TableColumn fx:id="colNombre" text="Nombre" prefWidth="140"/>
+            <TableColumn fx:id="colApellido" text="Apellido" prefWidth="140"/>
+            <TableColumn fx:id="colDestino" text="Destino" prefWidth="140"/>
+        </columns>
+    </TableView>
+    <Button text="Cerrar" layoutX="210" layoutY="250" prefWidth="80" onAction="#cerrarVentana"/>
+</AnchorPane>
